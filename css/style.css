@@ -37,7 +37,7 @@ ul, ol {margin: 0; padding: 0;}
 
 .nav-list {color: #fff; list-style-type: none;}
 
-.nav-list li { border-bottom: 1px dotted #777; padding: 8%; font-size: 14px;}
+.nav-list li { border-bottom: 1px dotted #777; padding: 6%; font-size: 14px;}
 .nav-icon {background-image:url(../images/list-icon.png;)}
 .nav-desc {color: #fff; list-style-type: none; padding: 10px 25px;}
 .nav-desc li {font-size: 14px; padding: 5px;}
@@ -128,7 +128,13 @@ ul, ol {margin: 0; padding: 0;}
 
 /*fixers*/
 .dotted {border-top: 1px dashed rgba(0,0,0,0.5);}
+.dotted-both {border-top: 1px dashed rgba(0,0,0,0.5); border-bottom: 1px dashed rgba(0,0,0,0.5); padding: 15px;}
+.dotted-top {border-top: 1px dashed rgba(0,0,0,0.5); padding: 15px;}
 .dotted-w {border-top: 1px dashed rgba(255,255,255,0.5);}
+.dotted-both-w {border-top: 1px dashed rgba(255,255,255,0.5); border-bottom: 1px dashed rgba(255,255,255,0.5); padding: 15px;}
+.border-top {border-top: 1px solid rgba(0,0,0,0.5);}
+.border-bottom {border-bottom: 1px solid rgba(0,0,0,0.5);}
+.border-right {border-right: 1px solid #666 !important;}
 .digit {font-size: 22px; letter-spacing: 3px;}
 .c-black {color: #666 !important;}
 .c-white {color: #fff !important;}
@@ -155,7 +161,7 @@ ul, ol {margin: 0; padding: 0;}
 	.p-0-sm {padding: 0 !important;}
 	.contact-link-sm {height: 10vh; background-color: #474747; position: fixed; z-index: 1; transition: ease-in-out all 0.5s; padding: 15px;}
 	.contact-link-sm:hover{background-color: #fff;}
-	.collapsible-navbar {width: 75%; top: 80px; left: 0;}
+	.collapsible-navbar {width: 75%; top: 80px; right: 0;}
 	.nav-list li {padding: 10px 20px;}
 	.sm-only {display: block !important;}
 	.pc-only {display: none !important;}
@@ -190,7 +196,9 @@ ul, ol {margin: 0; padding: 0;}
 	
 	.list-icon {top: 14px; left: 37px;}
 	.right-button {position: relative; display: block; margin: 30px auto 90px auto; width: 50%; right: 0; border-radius: 3px !important; font-size: 14px;}
-	.ct-link {border: none !important;}
+	.ct-link {border: none !important; padding: 15px;}
+	
+	.contact-links div {border-bottom: 1px solid #dedede;}
 	
 	.news-sm-wrapper {text-align: left;}
 	.news-sm-wrapper img {width: 100%;}
@@ -199,7 +207,7 @@ ul, ol {margin: 0; padding: 0;}
 	.news-sm-wrapper-div p{width: 55%; font-size: 16px;}
 	.pr-hd-padding {padding-top: 5px;}
 	.price-block .swiper-slide img {padding-top: 5px;}
-	.price-block .swiper-slide p {margin-bottom: 0;}
+	.price-block .swiper-slide p {margin-bottom: 15px;}
 	.price-block .swiper-slide span {font-size: 18px;}
 	.price-block .swiper-slide {padding-bottom: 30;}
 	.price-block .swiper-slide hr {width: 80%; margin: 1rem auto;}
