@@ -436,6 +436,7 @@
 			<p class="toggle-trigger dotted-both">
 		  お料理内容<img src="images/plus-icon-lg.png" class="fa-plus"><img src="images/minus-icon-lg.png" class="fa-minus">
 			</p>
+                
 				<div class="collapsible-navbar-price">
 	<ul class="nav-desc">
 		<a href="#"><li>うな重・揚げ物・出汁巻き玉子入</li></a>
@@ -634,7 +635,12 @@
 	
 	$(".toggle-trigger").click(function(){
 	$(this).next(".collapsible-navbar-price").slideToggle("0.3s");
+    $('.fa-minus').toggle();
+    $('.fa-plus').toggle();
+  $('.toggle-trigger').removeClass('dotted-both').toggle();
+        $('.toggle-trigger').addClass('dotted-top').toggle();
 });
+
 	
 	$("#to-top").click(function() {
     $('body').animate({
