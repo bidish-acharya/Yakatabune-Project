@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-body {color: #666; font-family: 'Noto Serif', serif; font-size: 18px; overflow-x: hidden; font-weight:500;}
+body {color: #666; font-family: "HGS明朝E", "メイリオ", Meiryo, serif; line-height: 1.0; font-size: 18px; overflow-x: hidden; font-weight:500;}
 p {font-size: 14px;}
 a {color: #666; text-decoration: none;}
 a:hover {color: #666; text-decoration: none;}
@@ -39,10 +39,10 @@ ul, ol {margin: 0; padding: 0;}
 /* first section */
 
 .about {background-image: url("../images/about.JPG"); background-size: cover; background-position: center; background-color: rgba(0,0,0,0.4);}
-.imgText {font-size: 24px; letter-spacing: 2px; padding-bottom: 30px; font-weight: 500;}
-.textBlock p {line-height: 2; font-size: 16px;}
+.imgText {font-size: 24px; letter-spacing: 0.19em; line-height: 1.9; padding-bottom: 30px; font-weight: 500;}
+.textBlock p {font-size: 16px; letter-spacing: 0.19em; line-height: 1.9; text-align: justify;}
 .textBlock {padding: 90px;}
-.blackBackdrop{background: rgba(0, 0, 0, 0.5); height: 100%;}
+.blackBackdrop{background: rgba(0, 0, 0, 0.6); height: 100%;}
 .text-bg {background-image: url(../images/textblock-bg.jpg);}
 
 /* grow animation */
@@ -76,7 +76,7 @@ ul, ol {margin: 0; padding: 0;}
 .swiper-container {padding: 30px 90px 30px 60px !important;}
 
 .section-1 {background-image: url(../images/11147133_1338176416199887_3343273924380815686_o.jpg); background-size: cover; height: 100%;}
-.section-2 {background-image: url("../images/20140429 1154.jpg"); background-size: cover; height: 100%;}
+.section-2 {background-image: url("../images/course-ebiyamaru.jpg"); background-size: cover; height: 100%;}
 .section-3 {background-image: url(../images/0a63830e9e8b991ce6e10431449dc52b_l.jpg); background-size: cover; height: 100%;}
 .section-4 {background-image: url(../images/pixta_32492023_S.jpg); background-size: cover; background-position: center; height: 100%;}
 .section-5 {background-image: url(../images/section-5.jpg); background-size: cover; background-position: center; height: 100%;}
@@ -145,12 +145,30 @@ ul, ol {margin: 0; padding: 0;}
 .ship-img7 {background-image: url(../images/ship/ship7-yakatabune.jpg); background-size: cover; background-position: center; height: 50vh;}
 .ship-img8 {background-image: url(../images/ship/ship8-yakatabune.jpg); background-size: cover; background-position: center; height: 50vh;}
 .w-sm-50 {width: 50%;}
+.table-ship {margin-top: 120px;}
+.greyDrop {background-color: #F0F0F0;}
 
+.two-column {margin: 45px auto;}
+.two-column td {border: 1px solid #B1B1B1; padding: 30px;}
+
+.title-table {margin: 45px auto 75px; }
+.title-table td {border: 1px solid #B1B1B1; padding: 25px; text-align: left;}
+.title-table th {border: 1px solid #B1B1B1; padding: 25px; width: 25%; text-align: left;}
+
+.page-navigation {height: 100%; margin: 45px 0 0;  padding: 45px 15px !important;}
+.page-navigation-links {padding: 10px !important; transition: all ease 0.5s;}
+.page-navigation p {color: #fff; margin-bottom: 0 !important; font-size: 18px;}
+
+.course-nav {background-image: url(../images/course-ebiyamaru.jpg); background-size: cover; height: 20vh; background-position: center;}
+.plan-nav {background-image: url(../images/0a63830e9e8b991ce6e10431449dc52b_l.jpg); background-size: cover; height: 20vh; background-position: center;}
+.situation-nav {background-image: url(../images/pixta_32492023_S.jpg); background-size: cover; height: 20vh; background-position: center;}
+.fishing-nav {background-image: url(../images/section-5.jpg); background-size: cover; height: 20vh; background-position: center;}
+.page-navigation-links:hover {opacity: 0.8; transition: all ease 0.5s;}
 
 /*fixers*/
-.dotted-b {border-bottom: 1px dashed rgba(0,0,0,0.5); }
-.dotted-both {border-top: 1px dashed rgba(0,0,0,0.5); border-bottom: 1px dashed rgba(0,0,0,0.5); padding: 15px;}
-.dotted-top {border-top: 1px dashed rgba(0,0,0,0.5); padding: 15px; border-bottom: none !important;}
+.dotted-b {border-bottom: 1px dashed #B1B1B1; }
+.dotted-both {border-top: 1px dashed #B1B1B1; border-bottom: 1px dashed #B1B1B1; padding: 15px;}
+.dotted-top {border-top: 1px dashed #B1B1B1; padding: 15px; border-bottom: none !important;}
 .dotted-w {border-top: 1px dashed rgba(255,255,255,0.5);}
 .dotted-both-w {border-top: 1px dashed rgba(255,255,255,0.5); border-bottom: 1px dashed rgba(255,255,255,0.5); padding: 15px;}
 .border-top {border-top: 1px solid rgba(0,0,0,0.5);}
@@ -170,6 +188,7 @@ ul, ol {margin: 0; padding: 0;}
 
 @media(max-width:767px)
 {
+    .w-50 {width: auto!important;}
 	.br-on-mobile {
         display: static;
     }
@@ -249,16 +268,27 @@ ul, ol {margin: 0; padding: 0;}
 	.collapsible-navbar-price {text-align: center; margin-bottom: 15px; }
 	.collapsible-navbar-price a {color: #666; text-decoration: none;}
 	.footer-collapsible .nav-desc li {color: #fff;}
+    
+    
+    /* shipping page */
+    .breadcrumb {    position: absolute; width: 100%; top: 80px;}
+    .two-column {margin: 15px;}
+    .two-column td {display: block;}
+    .title-table {margin: 15px;}
+    .title-table th {width: 35%;}
+    .page-heading {margin-bottom: 30px;}
+    .page-heading p {width: 80%;}
+    .ship-img1, .ship-img2, .ship-img3, .ship-img4, .ship-img5, .ship-img6, .ship-img7, .ship-img8 {height: 35vh;}
+    
 	
 	/* fixers */
 	.pricing-padding-fixer {padding-bottom: 0;}
-	.vertical-banner {
-    right: 5%;}
+	.vertical-banner {right: 5%;}
 	
 	.grow:hover {transform: none;}
 	.border-right {border: none;}
 
-.line-break {display: inline;}
+    .line-break {display: inline;}
 	
 	@media only screen 
   and (min-device-width: 768px) 
