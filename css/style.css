@@ -171,21 +171,90 @@ ul, ol {margin: 0; padding: 0;}
 .course {background-image: url(../images/course/course-banner.jpg); background-position: center; }
 .navigate-down {margin: auto; color: #BA474E; font-size: 13px;}
 .page-heading .fas {color: #BA474E;}
-.course-head {text-align: center;}
-.course-head h2 {margin: 0 auto; font-size: 22px; padding: 11px; color: #fff;}
+.course-head {text-align: center; width: 90%;}
+.course-head h2 {margin: 0 auto; font-size: 22px; padding: 11px; color: #fff; letter-spacing: 2px;}
 .course-head span {font-size: 16px;}
 .course-item {margin-bottom: 105px;}
 .course-img1 {background-image:url("../images/course-ebiyamaru.jpg"); background-size: cover;}
 .course-img2 {background-image: url("../images/course2-ebiyamaru.jpg"); background-size: cover;}
+.course-img3 {background-image: url("../images/food-3.jpg"); background-size: cover;}
 .course-list {color: #666; line-height: 1.5; letter-spacing: 2px; padding-top: 30px;}
 .course-list li {font-size: 16px;}
 .course-price {padding-top: 45px; padding-left: 30px;}
 .course-price span {display: inline-block; width: 200px; margin: 5px; padding: 15px; background-color: #eee; text-align: center;}
+.mid-hr {border-top: 1px dashed #B1B1B1; width: 100%;}
+.title-mid {width: 15%; background-color: #fff; margin: 0 auto; text-align: center; position: relative; bottom: 35px; font-size: 24px;}
+.option-menu-wrapper {margin: 45px;}
+.option-menu-content h2 {margin-top: 15px; font-size: 20px;}
+.option-menu-content p {font-size: 16px; letter-spacing: 1px; line-height: 1.9; text-align: justify; margin-bottom: 0;}
+.souvenir {background-image: url(../images/course/souvenir.jpg); background-size: cover; height: 300px;}
+.vegetarian {background-image: url(../images/course/vegeterian-menu.jpg); background-size: cover; height: 300px;}
+.kids {background-image: url(../images/course/kids-menu.jpg); background-size: cover; height: 300px;}
+.companion {background-image: url(../images/course/companion-menu.jpg); background-size: cover; height: 300px;}
+.cake {background-image: url(../images/course/birthday-cake.jpg); background-size: cover; height: 300px;}
+.cuisine-1 {background-image: url(../images/course/japanese-cuisine1.jpg); background-size: cover; background-position: center; height: 50vh;}
+.cuisine-2 {background-image: url(../images/course/japanese-cuisine2.jpg); background-size: cover; background-position: center; height: 50vh;}
+.cuisine-3 {background-image: url(../images/course/japanese-cuisine3.jpg); background-size: cover; background-position: center; height: 50vh;}
+.cuisine-4 {background-image: url(../images/course/japanese-cuisine4.jpg); background-size: cover; background-position: center; height: 50vh;}
+.tempura-1 {background-image: url(../images/course/tempura-fried2.jpg); background-size: cover; background-position: center; height: 50vh;}
+.tempura-2 {background-image: url(../images/course2-ebiyamaru.jpg); background-size: cover; background-position: center; height: 50vh;}
+.course-gallery h2 {margin-top: 45px;}
+.course-gallery p {margin: 30px auto 60px;}
+.c-brown {color: #BA474E;}
+.beverage {background-image: url(../images/course/beverage.jpg); background-size: cover; background-position: center; height: 50vh;}
+
+/* plan page */
+
+.plan {background-image: url(../images/plan/plan-ebiyamaru.jpg); background-position: center; }
+.plan-img1 {background-image: url("../images/plan/plan-one.jpg"); background-repeat: no-repeat; background-position: right;}
+.plan-img2 {background-image: url("../images/plan/plan-two.jpg"); background-repeat: no-repeat; background-position: right;}
+.plan-img3 {background-image: url("../images/plan/plan-three.jpg"); background-repeat: no-repeat; background-position: right;}
+.plan-content p{margin: 30px 90px; font-size: 16px; text-align: justify; letter-spacing: 0.1em; line-height: 1.5;}
+.plan-img-r1 {background-image: url("../images/plan/plan-image-one.jpg"); height: 230px; background-repeat: no-repeat; }
+.plan-img-r2 {background-image: url("../images/plan/plan-image-two.jpg"); height: 230px; background-repeat: no-repeat; }
+.plan-img-r3 {background-image: url("../images/plan/plan-image-three.jpg"); height: 230px; background-repeat: no-repeat;}
+.plan-img-r4 {background-image: url("../images/plan/plan-image-four.jpg"); height: 230px; background-repeat: no-repeat; }
+.plan-img-r5 {background-image: url("../images/plan/plan-image-five.jpg"); height: 230px; background-repeat: no-repeat; }
+.plan-img-r6 {background-image: url("../images/plan/plan-image-six.jpg"); height: 230px; background-repeat: no-repeat; }
+.plan-img-r {margin: 30px 90px 0;}
+.plan-img-rb {margin: 0 90px;}
+
+/* situation page */
+
+.situation {background-image: url(../images/situation/situation-banner.jpg); background-position: center;}
+.right-text h2 {margin: 45px 60px 0; font-size: 24px; font-weight: bold; letter-spacing: 0.1em;}
+.right-text p {margin: 30px 60px; line-height: 2; letter-spacing: 0.1em; text-align: justify; font-size: 16px; font-weight: 500;}
+.spring {background-image:url("../images/situation/spring.jpg"); background-size: cover;}
+.summer {background-image:url("../images/situation/summer.jpg"); background-size: cover;}
+.autumn {background-image:url("../images/situation/autumn.jpg"); background-size: cover;}
+.winter {background-image:url("../images/situation/winter.jpg"); background-size: cover;}
+.situation-table {border: 1px solid #b1b1b1; margin: 45px auto; width: 100%;}
+.situation-table td {padding: 10px 30px; border-right: 1px solid #b1b1b1; font-size: 16px; font-weight: 500;}
+.situation-table th {padding: 10px 30px; border-right: 1px solid #b1b1b1; font-size: 18px; font-weight: bold;}
+.situation-img1 {background-image: url(../images/situation/situation_image1.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img2 {background-image: url(../images/situation/situation_image2.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img3 {background-image: url(../images/ship/ship5-yakatabune.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img4 {background-image: url(../images/situation/situation_image4.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img5 {background-image: url(../images/situation/situation_image5.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img6 {background-image: url(../images/situation/situation_image6.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img7 {background-image: url(../images/situation/situation_image7.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img8 {background-image: url(../images/situation/situation_image8.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img9 {background-image: url(../images/situation/situation_image9.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img10 {background-image: url(../images/about.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img11 {background-image: url(../images/situation/situation_image10.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img12 {background-image: url(../images/situation/situation_image11.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img13 {background-image: url(../images/situation/situation_image13.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img14 {background-image: url(../images/situation/situation_image14.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img15 {background-image: url(../images/situation/situation_image4.jpg); background-size: cover; background-position: center; height: 30vh;}
+.situation-img16 {background-image: url(../images/situation/situation_image16.jpg); background-size: cover; background-position: center; height: 30vh;}
+
+
 
 /*fixers*/
-.dotted-b {border-bottom: 1px dashed #B1B1B1; }
+.dotted-b {border-bottom: 1px dashed #B1B1B1;}
 .dotted-both {border-top: 1px dashed #B1B1B1; border-bottom: 1px dashed #B1B1B1; padding: 15px;}
 .dotted-top {border-top: 1px dashed #B1B1B1; padding: 15px; border-bottom: none !important;}
+.dotted-bottom {border-bottom: 1px dashed #B1B1B1; padding: 15px;}
 .dotted-w {border-top: 1px dashed rgba(255,255,255,0.5);}
 .dotted-both-w {border-top: 1px dashed rgba(255,255,255,0.5); border-bottom: 1px dashed rgba(255,255,255,0.5); padding: 15px;}
 .border-top {border-top: 1px solid rgba(0,0,0,0.5);}
@@ -202,6 +271,10 @@ ul, ol {margin: 0; padding: 0;}
 .orangeBackDrop {background-color: #D77452;}
 .greenBackDrop {background-color: #559855;}
 .yellowBackDrop {background-color: #D4B000;}
+.blueBackDrop {background-color: #2a809c;}
+.purpleBackDrop {background-color: #885c93;}
+.lightbrownBackdrop {background-color: #d78078;}
+.lightgreenBackdrop {background-color: #168995;}
 
 head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bottom: 30px; font-weight: 500;}
 
@@ -293,19 +366,54 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
     
     
     /* shipping page */
+    .inner-banner {width: 100vw; height: 75vh;}
     .breadcrumb {    position: absolute; width: 100%; top: 80px;}
     .two-column {margin: 15px;}
     .two-column td {display: block;}
     .title-table {margin: 15px;}
     .title-table th {width: 35%;}
     .page-heading {margin-bottom: 30px;}
-    .page-heading p {width: 80%;}
+    .page-heading p {width: 90%;}
     .ship-img1, .ship-img2, .ship-img3, .ship-img4, .ship-img5, .ship-img6, .ship-img7, .ship-img8 {height: 35vh;}
     
+    /* course page */
+    .course {background-image: url("../images/food-3.jpg"); background-size: cover; background-position: center; background-position-y: 80px;}
+    .course-img1, .course-img2, .course-img3 {height: 300px;}
+    .course-gallery p {width: 95%;}
+    .page-heading h2 {font-size: 24px;}
+    .course-head {width: 100%;}
+    
+    
+    /* plan page */
+    .plan-img-r {margin: 30px 0 0;}
+    .plan-img-rb {margin: 0;}
+    .plan-content {padding: 0 !important; }
+    .plan-content p {margin: 30px 20px;}
+    .plan-img1, .plan-img2, .plan-img3 {height: 100vh; background-size: cover;}
+    
+    
+    /* situation page */
+    .right-text h2 {text-align: center;}
+    .right-text p {margin: 30px 15px;}
+    .spring, .summer, .autumn, .winter {height: 300px;}
 	
 	/* fixers */
 	.pricing-padding-fixer {padding-bottom: 0;}
 	.vertical-banner {right: 5%;}
+    .p-0-sm {padding: 0 !important;}
+    .m-0-sm {margin: 0 !important;}
+    .course-top {margin-bottom: 0;}
+    .course-head span {display: block; margin-top: 10px; margin-left: 0 !important;}
+    .course-content {padding: 0 !important;}
+    .course-list {padding: 30px 15px;}
+    .course-list li {padding: 2px;}
+    .course-price {text-align: center; padding: 0;}
+    .course-price span {width: 130px; margin: 5px; padding: 10px;}
+    .course-item {margin-bottom: 30px;}
+    .title-mid {width: 50%;}
+    .option-menu-wrapper {margin: 0;}
+    .option-menu-content p {margin-bottom: 30px;}
+    .solid-bottom {border-bottom: 1px solid #b1b1b1;}
 	
 	.grow:hover {transform: none;}
 	.border-right {border: none;}
