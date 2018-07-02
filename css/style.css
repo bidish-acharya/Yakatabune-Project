@@ -134,8 +134,8 @@ ul, ol {margin: 0; padding: 0;}
 .breadcrumb {background-color: #F0F0F0;}
 .breadcrumb h5 {width: 80%; margin: auto; font-size: 12px; padding: 5px 0;}
 .page-heading {text-align: center;}
-.page-heading h2 {font-size: 26px;  margin: 60px auto 30px; font-weight: bold;}
-.page-heading p {font-size: 16px; width: 50%; margin: 45px auto; line-height: 2; text-align: justify;}
+.page-heading h2 {font-size: 26px;  margin: 60px auto 30px; font-weight: bold; line-height: 2; letter-spacing: 0.1em;}
+.page-heading p {font-size: 16px; width: 50%; margin: 45px auto; line-height: 2; letter-spacing: 2px; text-align: justify;}
 
 .ship-img1 {background-image: url(../images/11147133_1338176416199887_3343273924380815686_o.jpg); background-size: cover; background-position: center; height: 50vh;}
 .ship-img2 {background-image: url(../images/ship/ship2-yakatabune.jpg); background-size: cover; background-position: center; height: 50vh;}
@@ -251,16 +251,52 @@ ul, ol {margin: 0; padding: 0;}
 
 /* news page */
 
-.news-content h2 {font-size: 16px; font-weight: bold; margin: 15px 0; letter-spacing: 2px;}
+.news {background-image: url("../images/news-banner.jpg");}
+.news-content h2 {font-size: 16px; font-weight: bold; margin: 30px 0; letter-spacing: 2px;}
 .content {font-size: 14px; text-align: justify; line-height: 1.9; letter-spacing: 0.1em;}
 .category-tag {display: inline-block; border-right: 1px solid #b1b1b1; padding-right: 15px;}
 .date_posted {display: inline-block; margin-left: 15px; font-size: 12px;}
-.news-article {padding: 30px;}
+.news-article { padding: 0 30px; transition: 0.2s ease all; margin-bottom: 45px;}
+.news-article:hover img {cursor: pointer; opacity: 0.5; transition: 0.2s ease all;}
 .pagination {display: inline-block; margin: 15px auto 75px;}
 .pagination a {float: left; padding: 5px 15px; margin: 0 7px;text-decoration: none;}
 .active {background-color: #666; color: #fff;}
 .pagination .fas {font-size: 30px;}
+.horizontal {text-align: center; list-style: none; letter-spacing: -0.4em;}
+.horizontal li {display: inline-block; letter-spacing: normal; border-right: 1px solid #666; margin-top: 5px; margin-bottom: 5px; padding: 0 45px; font-size: 14px;}
+.horizontal:first-child {border-left: 1px solid #666;}
+.horizontal li:hover {opacity: 0.7;}
 
+/* news-single page */
+.news-article-full {margin: 0 auto; width: 50%;}
+.news-single-pagination {position: relative; text-align: center; margin: 60px 0;}
+.left-single-pagination {left: 0; position: absolute; transition: ease all 0.2s;}
+.left-single-pagination:hover {opacity: 0.8; transition: ease all 0.2s;}
+.right-single-pagination {right:0; position: absolute; transition: ease all 0.2s;}
+.right-single-pagination:hover {opacity: 0.8; transition: ease all 0.2s;}
+.content-full {letter-spacing: 2px; line-height: 2;}
+.news-single-horizontal {margin: 0 0 60px;}
+.news-single-horizontal-mid {border: 1px solid #808080; padding: 10px 20px; transition: ease all 0.2s;}
+.news-single-horizontal-mid:hover {opacity: 0.8; transition: ease all 0.2s;}
+.right-icon {position: absolute; right: -30px;}
+.left-icon {position: absolute; left: -30px;}
+
+
+ /* fishing page */
+ .fishing-top {margin-bottom: 30px !important;}
+.fishing-table {padding-bottom: 60px !important;}
+.table-notes {margin: 0 !important; margin-top: -30px !important; width 100%;}
+.page-heading .table-notes p {font-size: 12px; margin-top: -15px; line-height: 2; text-align: justify; margin: 0; width: 100%;}
+.fishing-gallery {margin: 0 auto;}
+.fishing-flow {margin: 30px;}
+.fishing-flow-item {width: 250px; height: 250px;}
+.fishing-flow-wrapper {padding: 30px;}
+.flow-item1 {background-image: url(../images/fishing/fishing-item1.jpg);}
+.flow-item2 {background-image: url(../images/fishing/fishing-item2.jpg);}
+.flow-item3 {background-image: url(../images/fishing/fishing-item3.jpg);}
+.flow-item4 {background-image: url(../images/fishing/fishing-item4.jpg);}
+.flow-item5 {background-image: url(../images/fishing/fishing-item5.jpg);}
+.flow-item6 {background-image: url(../images/fishing/fishing-item6.jpg);}
 
 
 /*fixers*/
@@ -288,6 +324,12 @@ ul, ol {margin: 0; padding: 0;}
 .purpleBackDrop {background-color: #885c93;}
 .lightbrownBackdrop {background-color: #d78078;}
 .lightgreenBackdrop {background-color: #168995;}
+.customh1 {font-size: 24px !important;}
+.customh2 {font-size: 16px !important;}
+.customh4 {font-size: 12px !important;}
+.customh5 {font-size: 10px !important;}
+ul {list-style: none;}
+.w-70 {width: 70%;}
 
 head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bottom: 30px; font-weight: 500;}
 
@@ -350,7 +392,7 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
 	.news-sm-wrapper {text-align: left;}
 	.news-sm-wrapper img {width: 100%;}
 	.news-sm-wrapper p {font-size: 16px; margin-top: 15px;}
-	.news-sm-wrapper-div { text-align: left;}
+	.news-sm-wrapper-div {text-align: left;}
 	.news-sm-wrapper-div p{width: 55%; font-size: 16px;}
 	.pr-hd-padding {padding-top: 5px;}
 	.price-block .swiper-slide img {padding-top: 5px;}
@@ -380,7 +422,7 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
     
     /* shipping page */
     .inner-banner {width: 100vw; height: 75vh;}
-    .breadcrumb { position: absolute; width: 100%; top: 80px;}
+    .breadcrumb {position: absolute; width: 100%; top: 80px;}
     .two-column {margin: 15px;}
     .two-column td {display: block;}
     .title-table {margin: 15px;}
@@ -409,6 +451,27 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
     .right-text h2 {text-align: center;}
     .right-text p {margin: 30px 15px;}
     .spring, .summer, .autumn, .winter {height: 300px;}
+    
+    /* news page */
+    .news-article {width: 50%; padding: 0 10px;; display: inline-block !important; margin-bottom: 15px;;}
+    .content {display: none;}
+    .horizontal li {padding: 0 20px;}
+    .horizontal {margin-bottom: 30px;}
+    .category-tag, .date-posted {font-size: 10px;}
+    .pagination {margin-bottom: 30px;}
+    .pagination a {padding: 0 5px;}
+    
+    /* news full */
+    .news-full {text-align: center;}
+    .news-article-full {margin: 0 auto; width: 100%;}
+    .content-full {padding: 0 15px;}
+    .right-icon {right: 10px; top: 15px;}
+    .left-icon {left: 10px; top: 15px;}
+    .right-single-pagination {right: 30px; width: 100px;}
+    .left-single-pagination {left: 30px; width: 100px;}
+    .news-single-horizontal-mid {position: relative; top: 75px; padding: 10px 20px; font-size: 12px;}
+    
+
 	
 	/* fixers */
 	.pricing-padding-fixer {padding-bottom: 0;}
