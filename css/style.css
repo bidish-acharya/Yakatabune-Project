@@ -288,16 +288,21 @@ ul, ol {margin: 0; padding: 0;}
 .table-notes {margin: 0 !important; margin-top: -30px !important; width 100%;}
 .page-heading .table-notes p {font-size: 12px; margin-top: -15px; line-height: 2; text-align: justify; margin: 0; width: 100%;}
 .fishing-gallery {margin: 0 auto;}
-.fishing-flow {margin: 30px;}
-.fishing-flow-item {width: 250px; height: 250px;}
-.fishing-flow-wrapper {padding: 30px;}
+.fishing-flow {margin: 0 30px;}
+.fishing-flow-item {height: 250px;}
+.fishing-flow-wrapper { padding: 30px 60px 0;}
 .flow-item1 {background-image: url(../images/fishing/fishing-item1.jpg);}
 .flow-item2 {background-image: url(../images/fishing/fishing-item2.jpg);}
 .flow-item3 {background-image: url(../images/fishing/fishing-item3.jpg);}
 .flow-item4 {background-image: url(../images/fishing/fishing-item4.jpg);}
 .flow-item5 {background-image: url(../images/fishing/fishing-item5.jpg);}
 .flow-item6 {background-image: url(../images/fishing/fishing-item6.jpg);}
-
+.fishing-flow-wrapper .fas {position: relative; font-size: 21px; top: 50%; bottom: 50%; left: 50%;}
+.focus-restaurant-1 {background-image: url(../images/course/tempura-fried2.jpg); background-size: cover; background-position: center; height: 100vh;}
+.beginner-fishing-item h4 {border-bottom: 1px solid #b1b1b1; font-size: 20px;}
+.beginner-fishing-item {padding: 15px 75px;}
+.captain-say { padding: 45px; text-align: center;}
+.captain-icon {position: absolute; right: 15%;}
 
 /*fixers*/
 .dotted-b {border-bottom: 1px dashed #B1B1B1;}
@@ -331,7 +336,8 @@ ul, ol {margin: 0; padding: 0;}
 ul {list-style: none;}
 .w-70 {width: 70%;}
 
-head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bottom: 30px; font-weight: 500;}
+.head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bottom: 30px; font-weight: 500;}
+.para-text {font-size: 16px; letter-spacing: 2px; line-height: 1.9em; font-weight: 500; text-align: justify;}
 
 
 
