@@ -283,7 +283,8 @@ ul, ol {margin: 0; padding: 0;}
 
 
  /* fishing page */
- .fishing-top {margin-bottom: 30px !important;}
+.fishing {background-image: url(../images/fishing/fishing-banner-01.jpg); background-position: center;}
+.fishing-top {margin-bottom: 30px !important;}
 .fishing-table {padding-bottom: 60px !important;}
 .table-notes {margin: 0 !important; margin-top: -30px !important; width 100%;}
 .page-heading .table-notes p {font-size: 12px; margin-top: -15px; line-height: 2; text-align: justify; margin: 0; width: 100%;}
@@ -291,18 +292,71 @@ ul, ol {margin: 0; padding: 0;}
 .fishing-flow {margin: 0 30px;}
 .fishing-flow-item {height: 250px;}
 .fishing-flow-wrapper { padding: 30px 60px 0;}
-.flow-item1 {background-image: url(../images/fishing/fishing-item1.jpg);}
-.flow-item2 {background-image: url(../images/fishing/fishing-item2.jpg);}
-.flow-item3 {background-image: url(../images/fishing/fishing-item3.jpg);}
-.flow-item4 {background-image: url(../images/fishing/fishing-item4.jpg);}
-.flow-item5 {background-image: url(../images/fishing/fishing-item5.jpg);}
-.flow-item6 {background-image: url(../images/fishing/fishing-item6.jpg);}
+.flow-item1 {background-image: url(../images/fishing/fishing-item1.jpg); background-size: cover; background-position: center;}
+.flow-item2 {background-image: url(../images/fishing/fishing-item2.jpg); background-size: cover; background-position: center;}
+.flow-item3 {background-image: url(../images/fishing/fishing-item3.jpg); background-size: cover; background-position: center;}
+.flow-item4 {background-image: url(../images/fishing/fishing-item4.jpg); background-size: cover; background-position: center;}
+.flow-item5 {background-image: url(../images/fishing/fishing-item5.jpg); background-size: cover; background-position: center;}
+.flow-item6 {background-image: url(../images/fishing/fishing-item6.jpg); background-size: cover; background-position: center;}
 .fishing-flow-wrapper .fas {position: relative; font-size: 21px; top: 50%; bottom: 50%; left: 50%;}
 .focus-restaurant-1 {background-image: url(../images/course/tempura-fried2.jpg); background-size: cover; background-position: center; height: 100vh;}
 .beginner-fishing-item h4 {border-bottom: 1px solid #b1b1b1; font-size: 20px;}
 .beginner-fishing-item {padding: 15px 75px;}
 .captain-say { padding: 45px; text-align: center;}
 .captain-icon {position: absolute; right: 15%;}
+
+.fishing-gallery-1 {background-image: url(../images/fishing/fishing-gallery-1.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-2 {background-image: url(../images/fishing/fishing-gallery-2.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-3 {background-image: url(../images/fishing/fishing-gallery-oi_kaijou.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-4 {background-image: url(../images/fishing/fishing-gallery-4.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-5 {background-image: url(../images/fishing/fishing-gallery-5.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-6 {background-image: url(../images/fishing/fishing-gallery-6.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-7 {background-image: url(../images/fishing/fishing-gallery-7.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-8 {background-image: url(../images/fishing/fishing-gallery-8.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-9 {background-image: url(../images/fishing/fishing-gallery-9.jpg); background-position: center; height: 80vh; background-size: cover;}
+.fishing-gallery-10 {background-image: url(../images/fishing/ship00947-006.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-11 {background-image: url(../images/fishing/ship00947-010.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-12 {background-image: url(../images/fishing/ship00947-007.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-13 {background-image: url(../images/fishing/ship00947-014.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-14 {background-image: url(../images/fishing/fishing-gallery-14.jpg); background-size: cover; background-position: center; height: 100vh;}
+.fishing-gallery-15 {background-image: url(../images/fishing/fishing-gallery-15.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-16 {background-image: url(../images/fishing/fishing-gallery-16.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-17 {background-image: url(../images/fishing/fishing-gallery-17.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-18 {background-image: url(../images/fishing/fishing-gallery-18.jpg); background-size: cover; background-position: center; height: 50vh;}
+
+.fishing-gallery-19 {background-image: url(../images/fishing/fishing-gallery-19.png); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-20 {background-image: url(../images/fishing/fishing-gallery-20.png); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-21 {background-image: url(../images/fishing/fishing-gallery-21.png); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-22 {background-image: url(../images/fishing/fishing-gallery-22.png); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-23 {background-image: url(../images/fishing/fishing-gallery-23.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-24 {background-image: url(../images/fishing/fishing-gallery-24.JPG); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-25 {background-image: url(../images/fishing/fishing-gallery-25.JPG); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-26 {background-image: url(../images/fishing/fishing-gallery-26.JPG); background-size: cover; background-position: center; height: 50vh;}
+.flow-icon {background-image: url(../images/fishing/flow-icon.jpg); background-repeat: no-repeat; background-position-y: 150px;}
+
+/* FAQ Page */
+
+.faq {background-image: url("../images/faq-banner-01.jpg"); height: 35vh;}
+.question {color: #165e82; margin-right: 5px; text-transform: uppercase; font-size: 20px;}
+.answer {color: #d74b52; margin-right: 5px; text-transform: uppercase; font-size: 20px;}
+
+/* privacy page */
+.privacy-wrapper {padding: 10%;}
+.privacy {background-image: url("../images/privacy-banner-01.jpg"); height: 35vh;}
+
+/* flow page */
+.flow {background-image: url("../images/flow-banner-01.jpg"); height: 35vh;}
+.flow-section {padding: 45px; text-align: center;}
+.flow-section h2 {font-size: 26px; margin-top: 30px;}
+.flow-title-mid {width: 25%; bottom: 30px; font-size: 16px; text-transform: uppercase;}
+.step-section {margin-top: 11%; }
+.step-section p {text-align: center;}
+.flow-btn {width: 40%; margin: 10px 15px;}
+.divider {height: 50px;}
+.step-section h2 {font-size: 18px; margin-top: 0; margin-bottom: 20px; font-weight: bold; letter-spacing: 2px;}
+.t-left {text-align: left !important;}
+.table-notes-flow {margin-left: 50px;}
+
 
 /*fixers*/
 .dotted-b {border-bottom: 1px dashed #B1B1B1;}
@@ -381,11 +435,9 @@ ul {list-style: none;}
 	.news-section h2 span {display: block; margin: 15px 0;}
 	.pricing span {display: inline-block; width: 130px; margin: 5px; padding: 5px;}
 	.price-block {padding: 0;}
-	.price-sm {position: relative; width: 35%; top: -28px; background-color: #fff; margin: 0 auto; font-size: 16px;}
-    
+	.price-sm {position: relative; width: 35%; top: -28px; background-color: #fff; margin: 0 auto; font-size: 16px;}  
     .collapsible-content {padding: 0; margin-bottom: 15px;}
-	
-	
+
 	.swiper-slide p {text-align: center;}
 	.price-img {width: 100%;}
 	
@@ -435,7 +487,7 @@ ul {list-style: none;}
     .title-table th {width: 35%;}
     .page-heading {margin-bottom: 30px;}
     .page-heading p {width: 90%;}
-    .ship-img1, .ship-img2, .ship-img3, .ship-img4, .ship-img5, .ship-img6, .ship-img7, .ship-img8 {height: 35vh;}
+    .ship-img1, .ship-img2, .ship-img3, .ship-img4, .ship-img5, .ship-img6, .ship-img7, .ship-img8, {height: 35vh;}
     
     /* course page */
     .course {background-image: url("../images/food-3.jpg"); background-size: cover; background-position: center; background-position-y: 80px;}
@@ -477,6 +529,42 @@ ul {list-style: none;}
     .left-single-pagination {left: 30px; width: 100px;}
     .news-single-horizontal-mid {position: relative; top: 75px; padding: 10px 20px; font-size: 12px;}
     
+    
+    /* fishing */
+    .fishing-area img {width: 100%;}
+    .captain-say img {width: 100%;}
+    .captain-icon {right: 5px; top: 60px; width: 30%;}
+    .fishing {background-image: url(../images/fishing/fishing-banner-smp-01-01.jpg); background-size: cover; background-position-y: 70px;}
+    .fishing-top {text-align: left; padding: 0 30px;}
+    .fishing-table {width: 90%; margin: 0 auto;}
+    .fishing-top {margin-bottom: 0 !important;}
+    .fishing-top h2 {margin-bottom: 0 !important;}
+    .fishing-table.text-bg {background: #fff;}
+    .fishing-table .situation-table td {border-bottom: 1px solid #b1b1b1; padding: 10px; font-size: 14px;}
+    .fishing-table .situation-table th {border-bottom: 1px solid #b1b1b1;}
+    .fishing-gallery h2 {margin-top: 30px; width: 80%; font-size: 18px !important;}
+    .fishing-gallery-9 {height: 55vh;}
+    .fishing-flow {margin: 0;}
+    .fishing-flow-wrapper {padding: 0;}
+    .fishing-gallery p {margin-top: 30px;}
+    .fishing-gallery-14 {height: 55vh;}
+    .beginner-fishing-item {padding: 15px 30px;}
+    .captain-text {width: 70%;}
+    .captain-say {padding: 0px;}
+    .flow-icon {background: none;}
+    
+    /* faq page */
+    .faq {height: 55vh;}
+    #accordion {padding: 15px !important; width: 100% !important;}
+    .card {font-size: 14px !important;}
+    
+    /* privacy page */
+    .privacy-wrapper { padding: 30px 0;}
+    
+    /* flow page */
+    .flow-section {padding: 15px; width: 100%;}
+    .table-notes-flow {margin: 0 20px;}
+    .flow-btn {width: 70%;}
 
 	
 	/* fixers */
@@ -496,6 +584,9 @@ ul {list-style: none;}
     .option-menu-wrapper {margin: 0;}
     .option-menu-content p {margin-bottom: 30px;}
     .solid-bottom {border-bottom: 1px solid #b1b1b1;}
+    .head-text {font-size: 16px !important;}
+    .w-sm-100 {width: 100% !important;}
+    .sm-height {height: 35vh;}
 	
 	.grow:hover {transform: none;}
 	.border-right {border: none;}

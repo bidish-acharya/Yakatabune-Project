@@ -1,0 +1,10 @@
+.collapsible {background-color:white;color:#000000;cursor: pointer; padding:10px 5px;width: 100%; border: #000000;text-align: center;outline: #0b2e13;font-size: 15px;}
+
+.active, .collapsible:hover {background-color: #ebebeb; color: black;}
+
+.content {padding: 0 18px; display: none;overflow: hidden;background-color: white;}
+.table-bordered, tr{border: solid black 1px;}
+#accordion{ width:90%; padding: 10%; text-align: center; align-content: center; align-items: center;}
+
+.card {text-align: left; margin-bottom: 15px; font-size: 16px;}
+.card-header{height: 5%; background: none;}
