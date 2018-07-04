@@ -32,7 +32,7 @@ ul, ol {margin: 0; padding: 0;}
 .nav-list {color: #fff; list-style-type: none;}
 
 .nav-list li { border-bottom: 1px dotted #777; padding: 6%; font-size: 14px;}
-.nav-icon {background-image:url(../images/list-icon.png;)}
+.nav-icon {background-image:url(../images/list-icon.png)}
 .nav-desc {color: #fff; list-style-type: none; padding: 10px 25px;}
 .nav-desc li {font-size: 14px; padding: 5px;}
 
@@ -286,7 +286,7 @@ ul, ol {margin: 0; padding: 0;}
 .fishing {background-image: url(../images/fishing/fishing-banner-01.jpg); background-position: center;}
 .fishing-top {margin-bottom: 30px !important;}
 .fishing-table {padding-bottom: 60px !important;}
-.table-notes {margin: 0 !important; margin-top: -30px !important; width 100%;}
+.table-notes {margin: 0 !important; margin-top: -30px !important; width: 100%;}
 .page-heading .table-notes p {font-size: 12px; margin-top: -15px; line-height: 2; text-align: justify; margin: 0; width: 100%;}
 .fishing-gallery {margin: 0 auto;}
 .fishing-flow {margin: 0 30px;}
@@ -411,7 +411,7 @@ ul {list-style: none;}
   }
     .banner {width: 91vw !important;}
     .inner-banner {width: 91vw !important;}
-    .course-head {92%;}
+    .course-head {width: 92%;}
 }
 @media screen and (min-width: 1600px) {
   .container-fluid {
@@ -430,7 +430,7 @@ ul {list-style: none;}
     }
 
     .br-on-mobile {
-        display: static;
+        display: block;
     }
 
     .reverseOnMobile {
@@ -665,7 +665,7 @@ ul {list-style: none;}
     }
 
     .price-block .swiper-slide {
-        padding-bottom: 30;
+        padding-bottom: 30px;
     }
 
     .price-block .swiper-slide hr {
@@ -788,7 +788,7 @@ ul {list-style: none;}
         width: 90%;
     }
 
-    .ship-img1, .ship-img2, .ship-img3, .ship-img4, .ship-img5, .ship-img6, .ship-img7, .ship-img8, {
+    .ship-img1, .ship-img2, .ship-img3, .ship-img4, .ship-img5, .ship-img6, .ship-img7, .ship-img8 {
         height: 35vh;
     }
 
