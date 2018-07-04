@@ -1,3 +1,6 @@
+<?php
+include "admin/process/functions.php";
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -60,153 +63,66 @@
         <a href="#"><li><img src="images/nav-list-icon.png" class="pr-4 text-capitalize">English Page</li></a>
         <a href="#"><li><img src="images/nav-list-icon.png" class="pr-4">アクセス</li></a>
         <a href="#"><li><img src="images/nav-list-icon.png" class="pr-4">ご予約・お問い合わせ</li></a>
-		</ul>
+    </ul>
 
 	</div>
 		
 	</div> 
     
-    <div class="breadcrumb m-auto"><h5><span class="text-uppercase">top</span> <span class="mr-2 ml-2"> > </span><span>ゑびや瓦版</span></h5></div>
-    
-    
+    <div class="breadcrumb m-auto"><h5><span class="text-uppercase">top</span> <span class="mr-2 ml-2"> > </span><span>ゑびや瓦版</span><span class="mr-2 ml-2"> > </span><span>ooo</span></h5></div>
+
+    <?php $news = getNews($conn, $_GET['id']); ?>
     <div class="container-fluid">
        <div class="news-section">
-		<img src="images/news-icon.png" class="img-fluid d-block top-icon">
-
-            <ul class="horizontal">
-               <a href="#"><li>すべて</li></a>
-                <a href="#"><li>お知らせ</li></a>
-                <a href="#"><li>イベント</li></a>
-                <a href="#"><li>キャンペーン</li></a>
-                <a href="#"><li>徒然日誌</li></a>
-                </ul>
-            
+		<img src="images/news-icon.png" class="img-fluid d-block top-icon pb-0 pt-4">            
             </div>
-        <div class="row option-menu-wrapper">
-        <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-            
-            <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-            
-            <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
         
-
-        <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+        <div class="row news-full">
+        <div class="news-article-full">
+            <div class="news-content text-center">
+            <h2 class="customh1"><?php echo $news[0]['title']; ?></h2>
+                <p class="category-tag"><?php echo getCategory($conn, $news[0]['category'])[0]['category']; ?></p><p class="date_posted"><?php echo $news[0]['date']; ?></p>
             </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
+            <img src="admin/uploads/<?php echo $news[0]['photo']; ?>" class="img-fluid w-100">
+            <div class="news-content">
+                <p class="content-full customh2 mt-4">
+                    <?php echo $news[0]['content']; ?>
+                </p>
+            </div>
             
-            <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
+            <div class="news-single-pagination">
+                <?php $newsPrev = getNews($conn, $_GET['id'] - 1);
+                    if ($newsPrev) {
+                ?>
+                    <img src="images/icn-angle-left.svg" class="left-icon" width="15">
+                    <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>?id=<?php echo $newsPrev[0]['id']; ?>" class="left-single-pagination maxCharacterTitle"><?php echo $newsPrev[0]['title']; ?></a>
+                <?php } ?>
+                <a href="#" class="news-single-horizontal-mid">一覧へ</a>
+                <?php $newsNext = getNews($conn, $_GET['id'] + 1);
+                    if ($newsNext) {
+                ?>
+                    <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>?id=<?php echo $newsNext[0]['id']; ?>" class="right-single-pagination maxCharacterTitle"><?php echo $newsNext[0]['title']; ?></a>
+                    <img src="images/icn-angle-right.svg" class="right-icon" width="15">
+                <?php } ?>
             </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-            
-            <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-        
-        <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-           <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-            
-            <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-            
-            <div class="col-md-4 news-article">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-        
-        <div class="col-md-4 news-article mb-0">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-            
-            <div class="col-md-4 news-article mb-0">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
-        </div>
-            
-            <div class="col-md-4 news-article mb-0">
-            <img src="images/sakura_skytree_night.jpg" class="img-fluid w-100">
-            <div class="news-content">
-            <h2>あああああああああああああああ</h2>
-                <p class="content">ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</p>
-            </div>
-                <p class="category-tag">若竹鰻膳</p><p class="date_posted">2018-00-00</p>
+                
         </div>
         </div>
     </div>
         
     <div class="container-fluid">
-        <div class="row">
-    <div class="pagination">
-  <a href="#" class="active">1</a>
-  <a href="#">2</a>
-  <a href="#">3</a>
-  <a href="#">4</a>
-  <a href="#">5</a>
-  <a href="#">6</a>
-  <a href="#"><i class="fas fa-angle-right"></i></a>
+        <div class="row news-single-horizontal">
+            <ul class="horizontal m-auto pc-only">
+                <?php $categoryList = getCategoryList($conn);
+                foreach($categoryList as $category) {
+                    ?>
+                    <a href="news.php#<?php echo $category['category']; ?>">
+                        <li ><?php echo $category['category']; ?></li>
+                    </a>
+                <?php } ?>
+            </ul>
         </div>
-</div>
-        </div>
+    </div>
 
 	
 	<footer>
