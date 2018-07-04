@@ -283,21 +283,89 @@ ul, ol {margin: 0; padding: 0;}
 
 
  /* fishing page */
- .fishing-top {margin-bottom: 30px !important;}
+.fishing {background-image: url(../images/fishing/fishing-banner-01.jpg); background-position: center;}
+.fishing-top {margin-bottom: 30px !important;}
 .fishing-table {padding-bottom: 60px !important;}
-.table-notes {margin: 0 !important; margin-top: -30px !important; width: 100%;}
+.table-notes {margin: 0 !important; margin-top: -30px !important; width 100%;}
 .page-heading .table-notes p {font-size: 12px; margin-top: -15px; line-height: 2; text-align: justify; margin: 0; width: 100%;}
 .fishing-gallery {margin: 0 auto;}
-.fishing-flow {margin: 30px;}
-.fishing-flow-item {width: 250px; height: 250px;}
-.fishing-flow-wrapper {padding: 30px;}
-.flow-item1 {background-image: url(../images/fishing/fishing-item1.jpg);}
-.flow-item2 {background-image: url(../images/fishing/fishing-item2.jpg);}
-.flow-item3 {background-image: url(../images/fishing/fishing-item3.jpg);}
-.flow-item4 {background-image: url(../images/fishing/fishing-item4.jpg);}
-.flow-item5 {background-image: url(../images/fishing/fishing-item5.jpg);}
-.flow-item6 {background-image: url(../images/fishing/fishing-item6.jpg);}
+.fishing-flow {margin: 0 30px;}
+.fishing-flow-item {height: 250px;}
+.fishing-flow-wrapper { padding: 30px 60px 0;}
+.flow-item1 {background-image: url(../images/fishing/fishing-item1.jpg); background-size: cover; background-position: center;}
+.flow-item2 {background-image: url(../images/fishing/fishing-item2.jpg); background-size: cover; background-position: center;}
+.flow-item3 {background-image: url(../images/fishing/fishing-item3.jpg); background-size: cover; background-position: center;}
+.flow-item4 {background-image: url(../images/fishing/fishing-item4.jpg); background-size: cover; background-position: center;}
+.flow-item5 {background-image: url(../images/fishing/fishing-item5.jpg); background-size: cover; background-position: center;}
+.flow-item6 {background-image: url(../images/fishing/fishing-item6.jpg); background-size: cover; background-position: center;}
+.fishing-flow-wrapper .fas {position: relative; font-size: 21px; top: 50%; bottom: 50%; left: 50%;}
+.focus-restaurant-1 {background-image: url(../images/course/tempura-fried2.jpg); background-size: cover; background-position: center; height: 100vh;}
+.beginner-fishing-item h4 {border-bottom: 1px solid #b1b1b1; font-size: 20px;}
+.beginner-fishing-item {padding: 15px 75px;}
+.captain-say { padding: 45px; text-align: center;}
+.captain-icon {position: absolute; right: 15%;}
 
+.fishing-gallery-1 {background-image: url(../images/fishing/fishing-gallery-1.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-2 {background-image: url(../images/fishing/fishing-gallery-2.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-3 {background-image: url(../images/fishing/fishing-gallery-oi_kaijou.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-4 {background-image: url(../images/fishing/fishing-gallery-4.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-5 {background-image: url(../images/fishing/fishing-gallery-5.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-6 {background-image: url(../images/fishing/fishing-gallery-6.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-7 {background-image: url(../images/fishing/fishing-gallery-7.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-8 {background-image: url(../images/fishing/fishing-gallery-8.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-9 {background-image: url(../images/fishing/fishing-gallery-9.jpg); background-position: center; height: 80vh; background-size: cover;}
+.fishing-gallery-10 {background-image: url(../images/fishing/ship00947-006.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-11 {background-image: url(../images/fishing/ship00947-010.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-12 {background-image: url(../images/fishing/ship00947-007.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-13 {background-image: url(../images/fishing/ship00947-014.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-14 {background-image: url(../images/fishing/fishing-gallery-14.jpg); background-size: cover; background-position: center; height: 100vh;}
+.fishing-gallery-15 {background-image: url(../images/fishing/fishing-gallery-15.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-16 {background-image: url(../images/fishing/fishing-gallery-16.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-17 {background-image: url(../images/fishing/fishing-gallery-17.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-18 {background-image: url(../images/fishing/fishing-gallery-18.jpg); background-size: cover; background-position: center; height: 50vh;}
+
+.fishing-gallery-19 {background-image: url(../images/fishing/fishing-gallery-19.png); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-20 {background-image: url(../images/fishing/fishing-gallery-20.png); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-21 {background-image: url(../images/fishing/fishing-gallery-21.png); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-22 {background-image: url(../images/fishing/fishing-gallery-22.png); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-23 {background-image: url(../images/fishing/fishing-gallery-23.jpg); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-24 {background-image: url(../images/fishing/fishing-gallery-24.JPG); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-25 {background-image: url(../images/fishing/fishing-gallery-25.JPG); background-size: cover; background-position: center; height: 50vh;}
+.fishing-gallery-26 {background-image: url(../images/fishing/fishing-gallery-26.JPG); background-size: cover; background-position: center; height: 50vh;}
+.flow-icon {background-image: url(../images/fishing/flow-icon.jpg); background-repeat: no-repeat; background-position-y: 150px;}
+
+/* FAQ Page */
+
+.faq {background-image: url("../images/faq-banner-01.jpg"); height: 35vh;}
+.question {color: #165e82; margin-right: 5px; text-transform: uppercase; font-size: 20px;}
+.answer {color: #d74b52; margin-right: 5px; text-transform: uppercase; font-size: 20px;}
+
+/* privacy page */
+.privacy-wrapper {padding: 10%;}
+.privacy {background-image: url("../images/privacy-banner-01.jpg"); height: 35vh;}
+
+/* flow page */
+.flow {background-image: url("../images/flow-banner-01.jpg"); height: 35vh;}
+.flow-section {padding: 45px; text-align: center;}
+.flow-section h2 {font-size: 26px; margin-top: 30px;}
+.flow-title-mid {width: 25%; bottom: 30px; font-size: 16px; text-transform: uppercase;}
+.step-section {margin-top: 11%; }
+.step-section p {text-align: center;}
+.flow-btn {width: 40%; margin: 10px 15px;}
+.divider {height: 50px;}
+.step-section h2 {font-size: 18px; margin-top: 0; margin-bottom: 20px; font-weight: bold; letter-spacing: 2px;}
+.t-left {text-align: left !important;}
+.table-notes-flow {margin-left: 50px;}
+
+/* contact page */
+
+.form-column{border-top: 1px solid #b1b1b1;}.column-label{font-weight:500;font-size:15px;font-size:0.9375rem;display:inline-block;width:45%;padding:20px 10px;vertical-align:top}.column-label label{display:inline-block}.column-input{display:inline-block;width:50%; text-align: left;}.column-input label{display:inline-block;margin:22px 5px}.column-input label input{margin:-4px 0px 0 0}.column-input .form-control{margin:20px 10px;width:90%}input[type="submit"]{width:100%;border-top:1px solid #fff;border-right:none;border-bottom:none;border-left:none;padding:20px 0;letter-spacing:0.1em;background:#013363;color:#fff;margin-top:-1px;font-size:18px;font-size:1.125rem;font-family:"Hervetica Neue","ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ＭＳ Ｐ明朝","MS PMincho","Ubuntu",serif !important}input[type="submit"]:hover{background:#144B80}.required{color:#165e82;}.column-error{margin-bottom:10px;color:#ff0000}.title-thanks{padding-top:100px}.title-thanks h2{background:#e2eaf6;padding:100px 10px !important}
+.form-control:focus {border-color: #165e82; box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);}
+.column-input .double {margin: 20px 10px; width: 43%; display: inline-block;}
+input[type="submit"] {background: #165e82; width: 20%; font-size: 16px; transition: ease all 700ms; padding: 11px; border-radius: 5px; margin-top: 45px;}
+input[type="submit"]:hover {background-color: #165e82; opacity: 0.8; cursor: pointer;}
+.form-wrap {font-size: 16px;}
+.contact-page-btn {color: #666; font-weight: normal;}
 
 /*fixers*/
 .dotted-b {border-bottom: 1px dashed #B1B1B1;}
@@ -307,7 +375,7 @@ ul, ol {margin: 0; padding: 0;}
 .dotted-w {border-top: 1px dashed rgba(255,255,255,0.5);}
 .dotted-both-w {border-top: 1px dashed rgba(255,255,255,0.5); border-bottom: 1px dashed rgba(255,255,255,0.5); padding: 15px;}
 .border-top {border-top: 1px solid rgba(0,0,0,0.5);}
-.border-bottom {border-bottom: 1px solid rgba(0,0,0,0.5);}
+.border-bottom {border-bottom: 1px solid #b1b1b1;}
 .border-right {border-right: 1px solid #666 !important;}
 .digit {font-size: 22px; letter-spacing: 3px; line-height: 32px;}
 .c-black {color: #666 !important;}
@@ -325,16 +393,36 @@ ul, ol {margin: 0; padding: 0;}
 .lightbrownBackdrop {background-color: #d78078;}
 .lightgreenBackdrop {background-color: #168995;}
 .customh1 {font-size: 24px !important;}
+.customh {font-size: 20px !important;}
 .customh2 {font-size: 16px !important;}
 .customh4 {font-size: 12px !important;}
 .customh5 {font-size: 10px !important;}
 ul {list-style: none;}
 .w-70 {width: 70%;}
+.b-0 {border: none;}
 
-head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bottom: 30px; font-weight: 500;}
+.head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bottom: 30px; font-weight: 500;}
+.para-text {font-size: 16px; letter-spacing: 2px; line-height: 1.9em; font-weight: 500; text-align: justify;}
 
 
-
+@media screen and (min-width: 1400px) {
+  .container-fluid {
+     max-width: 90vw !important;
+  }
+    .banner {width: 91vw !important;}
+    .inner-banner {width: 91vw !important;}
+    .course-head {92%;}
+}
+@media screen and (min-width: 1600px) {
+  .container-fluid {
+    max-width: 90vw !important;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .container-fluid {
+    max-width: 91vw !important;
+  }
+}
 
 @media(max-width:767px) {
     .w-50 {
@@ -577,7 +665,7 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
     }
 
     .price-block .swiper-slide {
-        padding-bottom: 30px;
+        padding-bottom: 30;
     }
 
     .price-block .swiper-slide hr {
@@ -700,7 +788,7 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
         width: 90%;
     }
 
-    .ship-img1, .ship-img2, .ship-img3, .ship-img4, .ship-img5, .ship-img6, .ship-img7, .ship-img8 {
+    .ship-img1, .ship-img2, .ship-img3, .ship-img4, .ship-img5, .ship-img6, .ship-img7, .ship-img8, {
         height: 35vh;
     }
 
@@ -836,6 +924,157 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
         font-size: 12px;
     }
 
+    /* fishing */
+    .fishing-area img {
+        width: 100%;
+    }
+
+    .captain-say img {
+        width: 100%;
+    }
+
+    .captain-icon {
+        right: 5px;
+        top: 60px;
+        width: 30%;
+    }
+
+    .fishing {
+        background-image: url(../images/fishing/fishing-banner-smp-01-01.jpg);
+        background-size: cover;
+        background-position-y: 70px;
+    }
+
+    .fishing-top {
+        text-align: left;
+        padding: 0 30px;
+    }
+
+    .fishing-table {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .fishing-top {
+        margin-bottom: 0 !important;
+    }
+
+    .fishing-top h2 {
+        margin-bottom: 0 !important;
+    }
+
+    .fishing-table.text-bg {
+        background: #fff;
+    }
+
+    .fishing-table .situation-table td {
+        border-bottom: 1px solid #b1b1b1;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .fishing-table .situation-table th {
+        border-bottom: 1px solid #b1b1b1;
+    }
+
+    .fishing-gallery h2 {
+        margin-top: 30px;
+        width: 80%;
+        font-size: 18px !important;
+    }
+
+    .fishing-gallery-9 {
+        height: 55vh;
+    }
+
+    .fishing-flow {
+        margin: 0;
+    }
+
+    .fishing-flow-wrapper {
+        padding: 0;
+    }
+
+    .fishing-gallery p {
+        margin-top: 30px;
+    }
+
+    .fishing-gallery-14 {
+        height: 55vh;
+    }
+
+    .beginner-fishing-item {
+        padding: 15px 30px;
+    }
+
+    .captain-text {
+        width: 70%;
+    }
+
+    .captain-say {
+        padding: 0px;
+    }
+
+    .flow-icon {
+        background: none;
+    }
+
+    /* faq page */
+    .faq {
+        height: 55vh;
+    }
+
+    #accordion {
+        padding: 15px !important;
+        width: 100% !important;
+    }
+
+    .card {
+        font-size: 14px !important;
+    }
+
+    /* privacy page */
+    .privacy-wrapper {
+        padding: 30px 0;
+    }
+
+    /* flow page */
+    .flow-section {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .table-notes-flow {
+        margin: 0 20px;
+    }
+
+    .flow-btn {
+        width: 70%;
+    }
+
+    /* contact page */
+    .form-wrap {
+        width: 100%;
+        text-align: left;
+    }
+
+    .column-input {
+        width: 100%;
+    }
+
+    .column-input label {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .column-input .double {
+        width: 40%;
+    }
+
+    input[type="submit"] {
+        width: 40%;
+    }
+
     /* fixers */
     .pricing-padding-fixer {
         padding-bottom: 0;
@@ -906,6 +1145,18 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
         border-bottom: 1px solid #b1b1b1;
     }
 
+    .head-text {
+        font-size: 16px !important;
+    }
+
+    .w-sm-100 {
+        width: 100% !important;
+    }
+
+    .sm-height {
+        height: 35vh;
+    }
+
     .grow:hover {
         transform: none;
     }
@@ -917,7 +1168,6 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
     .line-break {
         display: inline;
     }
-}
 
     @media only screen
     and (min-device-width: 768px)
@@ -946,7 +1196,7 @@ head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bot
             width: 90vw !important;
         }
     }
-
+}
 
 
 /* Admin Dashboard CSS - Sushil */
