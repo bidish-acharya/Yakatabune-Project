@@ -357,6 +357,15 @@ ul, ol {margin: 0; padding: 0;}
 .t-left {text-align: left !important;}
 .table-notes-flow {margin-left: 50px;}
 
+/* contact page */
+
+.form-column{border-top: 1px solid #b1b1b1;}.column-label{font-weight:500;font-size:15px;font-size:0.9375rem;display:inline-block;width:45%;padding:20px 10px;vertical-align:top}.column-label label{display:inline-block}.column-input{display:inline-block;width:50%; text-align: left;}.column-input label{display:inline-block;margin:22px 5px}.column-input label input{margin:-4px 0px 0 0}.column-input .form-control{margin:20px 10px;width:90%}input[type="submit"]{width:100%;border-top:1px solid #fff;border-right:none;border-bottom:none;border-left:none;padding:20px 0;letter-spacing:0.1em;background:#013363;color:#fff;margin-top:-1px;font-size:18px;font-size:1.125rem;font-family:"Hervetica Neue","ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ＭＳ Ｐ明朝","MS PMincho","Ubuntu",serif !important}input[type="submit"]:hover{background:#144B80}.required{color:#165e82;}.column-error{margin-bottom:10px;color:#ff0000}.title-thanks{padding-top:100px}.title-thanks h2{background:#e2eaf6;padding:100px 10px !important}
+.form-control:focus {border-color: #165e82; box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);}
+.column-input .double {margin: 20px 10px; width: 43%; display: inline-block;}
+input[type="submit"] {background: #165e82; width: 20%; font-size: 16px; transition: ease all 700ms; padding: 11px; border-radius: 5px; margin-top: 45px;}
+input[type="submit"]:hover {background-color: #165e82; opacity: 0.8; cursor: pointer;}
+.form-wrap {font-size: 16px;}
+.contact-page-btn {color: #666; font-weight: normal;}
 
 /*fixers*/
 .dotted-b {border-bottom: 1px dashed #B1B1B1;}
@@ -366,7 +375,7 @@ ul, ol {margin: 0; padding: 0;}
 .dotted-w {border-top: 1px dashed rgba(255,255,255,0.5);}
 .dotted-both-w {border-top: 1px dashed rgba(255,255,255,0.5); border-bottom: 1px dashed rgba(255,255,255,0.5); padding: 15px;}
 .border-top {border-top: 1px solid rgba(0,0,0,0.5);}
-.border-bottom {border-bottom: 1px solid rgba(0,0,0,0.5);}
+.border-bottom {border-bottom: 1px solid #b1b1b1;}
 .border-right {border-right: 1px solid #666 !important;}
 .digit {font-size: 22px; letter-spacing: 3px; line-height: 32px;}
 .c-black {color: #666 !important;}
@@ -384,17 +393,36 @@ ul, ol {margin: 0; padding: 0;}
 .lightbrownBackdrop {background-color: #d78078;}
 .lightgreenBackdrop {background-color: #168995;}
 .customh1 {font-size: 24px !important;}
+.customh {font-size: 20px !important;}
 .customh2 {font-size: 16px !important;}
 .customh4 {font-size: 12px !important;}
 .customh5 {font-size: 10px !important;}
 ul {list-style: none;}
 .w-70 {width: 70%;}
+.b-0 {border: none;}
 
 .head-text {font-size: 24px; letter-spacing: 2px; line-height: 1.6em; padding-bottom: 30px; font-weight: 500;}
 .para-text {font-size: 16px; letter-spacing: 2px; line-height: 1.9em; font-weight: 500; text-align: justify;}
 
 
-
+@media screen and (min-width: 1400px) {
+  .container-fluid {
+     max-width: 90vw !important;
+  }
+    .banner {width: 91vw !important;}
+    .inner-banner {width: 91vw !important;}
+    .course-head {92%;}
+}
+@media screen and (min-width: 1600px) {
+  .container-fluid {
+    max-width: 90vw !important;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .container-fluid {
+    max-width: 91vw !important;
+  }
+}
 
 @media(max-width:767px)
 {
@@ -565,6 +593,14 @@ ul {list-style: none;}
     .flow-section {padding: 15px; width: 100%;}
     .table-notes-flow {margin: 0 20px;}
     .flow-btn {width: 70%;}
+    
+    /* contact page */
+    
+    .form-wrap {width: 100%; text-align: left;}
+    .column-input {width: 100%;}
+    .column-input label { margin: 5px; display: inline-block;}
+    .column-input .double {width: 40%;}
+    input[type="submit"]{width: 40%;}
 
 	
 	/* fixers */
@@ -597,18 +633,4 @@ ul {list-style: none;}
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
 	  .container-fluid {max-width: 85vw !important;}
-}
-
-
-@media(min-width: 1600px) {
-  .container-fluid {
-    max-width: 89vw !important;
-  }
-	.banner {width: 89vw !important;}
-}
-@media(min-width: 1900px) {
-  .container-fluid {
-    max-width: 90vw !important;
-  }
-	.banner {width: 90vw !important;}
 }
