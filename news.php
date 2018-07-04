@@ -99,69 +99,77 @@ include "admin/process/functions.php";
         <div class="tab-content">
             <?php $categoryList = getCategoryList($conn);
                 foreach($categoryList as $category) {
-                    if ($category === reset($categoryList)) { ?>
-                    <div class="tab-pane fade show active" role="tabpanel" id="<?php echo $category['category']; ?>">
+                        if ($category === reset($categoryList)) { ?>
+                            <div class="tab-pane fade show active" role="tabpanel" id="<?php echo $category['category']; ?>">
                         <?php } else { ?>
                             <div class="tab-pane fade show" role="tabpanel" id="<?php echo $category['category']; ?>">
                         <?php } ?>
-                        <div class="row option-menu-wrapper">
-                            <?php $newsList = getNewsList($conn);
-                                foreach($newsList as $news) {
-                                    if ($news['category'] == $category['id']) {
-                            ?>
-                            <div class="col-md-4 news-article">
-                                <img src="admin/uploads/<?php echo $news['photo']; ?>" class="img-fluid w-100">
-                                <div class="news-content maxCharacter">
-                                <h2><?php echo $news['title']; ?></h2>
-                                    <p class="content">
-                                        <?php echo $news['content']; ?>
-                                    </p>
+                            <div class="row option-menu-wrapper">
+                                <?php $newsList = getNewsListLimit($conn, $pageNo, $noOfRecordsPerPage);
+                                    foreach($newsList as $news) {
+                                        if ($news['category'] == $category['id']) {
+                                ?>
+                                <div class="col-md-4 news-article">
+                                    <img src="admin/uploads/<?php echo $news['photo']; ?>" class="img-fluid w-100">
+                                    <div class="news-content maxCharacter">
+                                    <h2><?php echo $news['title']; ?></h2>
+                                        <p class="content">
+                                            <?php echo $news['content']; ?>
+                                        </p>
+                                    </div>
+                                    <a href="view-news.php?id=<?php echo $news['id']; ?>" class="text-primary">
+                                        Read More
+                                    </a><br>
+                                        <p class="category-tag"><?php echo getCategory($conn, $news['category'])[0]['category']; ?></p>
+                                        <p class="date_posted"><?php echo $news['date']; ?></p>
                                 </div>
-                                <a href="view-news.php?id=<?php echo $news['id']; ?>" class="text-primary">
-                                    Read More
-                                </a><br>
-                                    <p class="category-tag"><?php echo getCategory($conn, $news['category'])[0]['category']; ?></p>
-                                    <p class="date_posted"><?php echo $news['date']; ?></p>
+                                <?php }
+                                    } ?>
                             </div>
-                            <?php }
-                                } ?>
-                        </div>
                     </div>
             <?php } ?>
-                    <div class="tab-pane fade show active" role="tabpanel" id="all">
-                            <div class="row option-menu-wrapper">
-                                <?php $newsList = getNewsList($conn);
-                                    foreach($newsList as $news) { ?>
-                                        <div class="col-md-4 news-article">
-                                            <img src="admin/uploads/<?php echo $news['photo']; ?>" class="img-fluid w-100">
-                                            <div class="news-content maxCharacter">
-                                                <h2><?php echo $news['title']; ?></h2>
-                                                <p class="content">
-                                                    <?php echo $news['content']; ?>
-                                                </p>
-                                            </div>
-                                            <a href="view-news.php?id=<?php echo $news['id']; ?>" class="text-primary">
-                                                Read More
-                                            </a><br>
-                                            <p class="category-tag"><?php echo getCategory($conn, $news['category'])[0]['category']; ?></p>
-                                            <p class="date_posted"><?php echo $news['date']; ?></p>
+                    <div class="tab-pane fade show" role="tabpanel" id="all">
+                        <div class="row option-menu-wrapper">
+                            <?php $newsList = getNewsListLimit($conn, $pageNo, $noOfRecordsPerPage);
+                            foreach($newsList as $news) {
+                                    ?>
+                                    <div class="col-md-4 news-article">
+                                        <img src="admin/uploads/<?php echo $news['photo']; ?>" class="img-fluid w-100">
+                                        <div class="news-content maxCharacter">
+                                            <h2><?php echo $news['title']; ?></h2>
+                                            <p class="content">
+                                                <?php echo $news['content']; ?>
+                                            </p>
                                         </div>
-                                    <?php } ?>
-                            </div>
+                                        <a href="view-news.php?id=<?php echo $news['id']; ?>" class="text-primary">
+                                            Read More
+                                        </a><br>
+                                        <p class="category-tag"><?php echo getCategory($conn, $news['category'])[0]['category']; ?></p>
+                                        <p class="date_posted"><?php echo $news['date']; ?></p>
+                                    </div>
+                                <?php } ?>
+                        </div>
                     </div>
-        </div>
     </div>
         
     <div class="container-fluid">
         <div class="row">
         <div class="pagination">
-          <a href="#" class="active">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">6</a>
-          <a href="#"><i class="fas fa-angle-right"></i></a>
+<!--            --><?php //if(isset($_GET['page'])) { $page = $_GET['page']; } else { $page = 1; }
+//            if($page > 5) { ?>
+<!--                <a href="?page=--><?php //echo ($page - 5);?><!--"><i class="fas fa-angle-left"></i></a>-->
+<!--            --><?php //} ?>
+<!--            --><?php
+//                $pageCount = 1;
+//                while ($page <= $totalPages) {
+//                    if($pageCount == 7) { break; } else { $pageCount++; }
+//            ?>
+<!--                <a href="?pageNo=--><?php //echo $page;?><!--"&page=--><?php //echo ?><!--><?php //echo $page; ?><!--</a>-->
+<!--            --><?php //$page++;
+//                } ?>
+<!--            --><?php //if(($pageNo+5) < $totalPages) { ?>
+<!--            <a href="?page=--><?php //echo ($page);?><!--&pageNo=--><?php //echo ($page);?><!--"><i class="fas fa-angle-right"></i></a>-->
+<!--            --><?php //} ?><!-- -->
         </div>
 </div>
         </div>

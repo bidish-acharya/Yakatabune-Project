@@ -66,9 +66,49 @@ function getCategory($conn, $id) {
 
 /* News */
 
+
+function getNewsCount($conn) {
+
+    $stmt=$conn->prepare("SELECT * from news");
+
+    if($stmt->execute()){
+        $result=$stmt->get_result();
+        if($result->num_rows >0){
+            return mysqli_num_rows($result);
+        }
+    }
+    return [];
+}
+
+if (isset($_GET['pageNo'])) {
+    $pageNo = $_GET['pageNo'];
+} else {
+    $pageNo = 1;
+}
+
+$noOfRecordsPerPage = 12;
+$offset = ($pageNo - 1) * $noOfRecordsPerPage;
+
+$totalPages = 10;
+//(getNewsCount($conn)/$noOfRecordsPerPage);
+
 function getNewsList($conn){
 
     $stmt=$conn->prepare("SELECT * FROM news ORDER BY date DESC");
+
+    if($stmt->execute()){
+        $result=$stmt->get_result();
+        if($result->num_rows >0){
+            return mysqli_fetch_all($result,MYSQLI_ASSOC);
+        }
+    }
+    return [];
+}
+
+function getNewsListLimit($conn, $pageNo, $noOfRecordsPerPage){
+
+    $stmt=$conn->prepare("SELECT * FROM news ORDER BY date DESC LIMIT ?,?");
+    $stmt->bind_param('ii', $pageNo, $noOfRecordsPerPage);
 
     if($stmt->execute()){
         $result=$stmt->get_result();
